@@ -1,0 +1,197 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/style1.css"/>
+</head>
+<body>
+<div class="container">
+<div class="bar">
+<div class="logo">
+<img src="images/logo.png" width="60px" height="50px"/>
+</div>
+<ul>
+<li>Home</li>
+<li>About Us</li>
+<li>Contact us</li>
+<li>sevices</li>
+</ul>
+</div>
+<div>
+<div class="image">
+<img src="images/mbl.jpg" width="100%" height="100%"/>
+</div>
+</div>
+<div class="flex-content">
+<div class="box1">
+<img src="images/galaxyZ.webp" />
+<pre>Every angle is your best angle
+ with FlexCam.
+Faster charging speed. 
+Longer battery life.
+Check what is important at a glance.
+
+Offers
+Up to ₹ 2000 Shop App Voucher
+Up to ₹4000 using referral code
+Get GST invoice and save up to 18%
+ on business purchases</pre>
+</div>
+<div class="box2">
+<img src="images/galaxy.webp"/>
+<pre>Full HD+ Display, 90Hz refresh rate
+Triple rear camera (50MP Main),
+13 MP Front 5000mAh Battery
+
+₹1500 bank discount
+Up to ₹ 2000 Shop App Voucher
+Get 5% additional discount using
+ referral code
+Get GST invoice and save up to 18% 
+on business</pre>
+</div>
+<div class="box3">
+<img src="images/galaxyM.avif"/>
+<pre>SDM 778G Processor, 7.4mm 
+thickness FHD+ 120Hz sAMOLED+ 
+Display, 64MP Triple Camera
+#BeFutureReady with 5G 11
+ bands support</pre>
+</div>
+</div>
+<div class="About">
+<div class="title">
+<h1> SAMSUNG GALAXY</h1>
+<pre><b>Samsung Galaxy (Korean: 삼성 갤럭시, stylized as SΛMSUNG Galaxy since 2015 
+(except Japan where it omits the Samsung branding),[2] previously stylized 
+as Samsung GALAXY; abbreviated as SG) is a series of computing and mobile 
+computing devices that are designed, manufactured and marketed by Samsung 
+Electronics. The product line includes the Samsung Galaxy S series of
+ high-end smartphones, the Samsung Galaxy Tab series of tablets,
+ the Samsung Galaxy Note series of tablets and phablets with the
+ added functionality of a stylus, the foldable Samsung Galaxy Z series,
+ and smartwatches including the first version of the Samsung
+ Galaxy Gear, with later versions dropping the Galaxy branding,
+ until the release of the Samsung Galaxy Watch in 2018.
+
+Samsung Galaxy devices use the Android operating system produced by Google
+, with a custom user interface called One UI (with previous versions
+ being known as Samsung Experience and TouchWiz). However, the Galaxy
+ TabPro S is the first Galaxy-branded Windows 10 device that was announced
+ in CES 2016. The Galaxy Watch is the first Galaxy-branded smartwatch since
+ the release of later iterations of the Gear smartwatch from 2014 to 2017.
+
+In 2020, Samsung added the Samsung Galaxy Chromebook 2-in-1 laptop 
+running ChromeOS to the Galaxy branding lineup.[3] The follow-on Samsung
+ Galaxy Chromebook 2 was released in 2021.[4]</b></pre>
+ </div>
+ <div class="sam">
+ <img src="images/samsung.webp" width="500px" height="450px" />
+ </div>
+ </div>
+ <script>
+       function validpassword(){
+	          var password=document.myform.pass1.value  
+	          var cpassword=document.myform.pass2.value
+	   
+	       if(password.length<6){
+		         alert("Enter minimum 6 digits")
+		         return false
+		   }
+		   
+		  if(password==cpassword){
+		       return true
+             }
+          else{
+		   alert("password & confirm-password must be same")
+		    return false 
+		   } 			 
+	   }
+	   
+	   
+	   function validname(){
+	          var Name=document.myform.name1.value
+	   
+	           if(Name=="null"||Name==""){
+			          alert("enter a proper name")
+			          return false
+			   }
+	   }
+	   
+	   function validmail(){
+	         var Email=document.myform.email.value
+			 var atposition=Email.indexOf("@")
+			 var dotposition=Email.lastIndexOf(".")
+	   
+	     if(atposition<1 || dotposition<atposition+2 || dotposition+2>=Email.length){
+		 
+		      alert("enter a proper email")
+			  return false
+		 }
+	   
+	   }
+	   function validdate(){
+	        var currentdate=new Date()
+	        var dob=new Date(document.myform.date.value)
+			
+		 if(dob>=currentdate){
+		 alert("enter a correct date")
+		 return false
+		 }	
+	   }
+	   
+	   function validmob(){
+	        var Number=document.myform.mobile.value
+			
+		if(Number.length == 10){
+		    return true
+		
+		}	else{
+		    alert("enter 10 digit number")
+			return false
+		
+		}
+	   
+	   
+	   
+	   }
+        
+      </script>
+	  <center>
+	  <div class="bg">
+	  <div class="valid">
+   <h1>validation</h1>
+   <form name="myform" onsubmit="return validmob()" action="output.html"><br/>
+   
+       Password : <input type="password" name="pass1"/><br/><br/>
+  confirm password : <input type="password" name="pass2"/><br/><br/>
+    
+     <input type="submit" value="check"/></h1>	<br/><br/>
+	 
+	 Your Name : <input type="text" name="name1" pattern="[a-z,A-Z ]{3,}"> <br/><br/>
+	   
+	    <input type="submit" value="check"/><br/><br/>
+		
+		
+		
+		Your email : <input type="email" name="email" pattern="[a-z @.]{1,}" required/><br/><br/>
+		
+		<input type="submit" value="check"/><br/><br/>
+		
+		
+		Enter Your D.O.B : <input type="date"  name="date"required/><br/><br/>
+	   
+	    <input type="submit" value="check"/><br/><br/>
+		
+		
+		Mobile Number :<input type="number" name="mobile" required/><br/><br/>
+		
+		 <input type="submit" value="check"/><br/><br/>
+		
+   </form>
+   </div>
+   </div>
+
+  </center>
+ 
+ </div>
+</body>
+</html>
